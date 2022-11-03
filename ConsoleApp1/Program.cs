@@ -13,7 +13,6 @@ var emoteOccurences = new Dictionary<string, int>();
 var emoteFilePath = $@"{Environment.CurrentDirectory}\emotes.txt";
 
 using var client = CreateHttpClientInstance();
-var monthlyLogCount = DateTime.Now.Year - year + (DateTime.Now.Month - month);
 
 for (int i = year; i <= DateTime.Now.Year; i++)
 {
